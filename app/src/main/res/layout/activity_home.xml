@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".ActivityHome"
+    tools:deviceIds="wear">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/inner_frame_layout_padding"
+            app:layout_boxedEdges="all" >
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:contentDescription="medicalSign"
+                android:src="@drawable/emergency" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="MediReq"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonMedicalRequest"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_background"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Call an ambulance"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/buttonSARequest"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle_background"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Subject Access Request"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/buttonCancelTerms"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_background"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Cancel Terms and Conditions"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.wear.widget.BoxInsetLayout>
