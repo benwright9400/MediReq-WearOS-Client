@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".ActivityComplete"
+    tools:context=".activities.ActivityComplete"
     tools:deviceIds="wear">
 
     <LinearLayout

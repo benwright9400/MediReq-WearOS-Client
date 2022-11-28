@@ -1,4 +1,4 @@
-package com.wrightapplications.medireq_client;
+package com.wrightapplications.medireq_client.activities;
 
 import android.app.Activity;
 import android.content.Intent;
